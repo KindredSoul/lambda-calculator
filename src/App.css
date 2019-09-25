@@ -1,22 +1,49 @@
 .container {
-    background-color: #c00025;
-    width: 100%;
-    max-width: 550px;
-    border-radius: 15px;
-    border: 2px solid grey;
-    padding-bottom: 25px;
+	background-color: #c00025;
+	width: 100%;
+	max-width: 550px;
+	border-radius: 15px;
+	border: 2px solid grey;
+	padding-bottom: 25px;
+}
+.logo {
+	padding: 20px 0 0 25px;
 }
 .display {
-    margin-top: 25px;
-    height: 100px;
-    width: 450px;
-    border-radius: 50px;
-    color: white;
-    background-color: #322c2d;
-    box-shadow: 1px 1px #322c2d;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-right: 8%;
-    font-size: 5.0rem;
-  }
+	margin-top: 25px;
+	margin-left: 25px;
+	height: 100px;
+	width: 450px;
+	border-radius: 50px;
+	color: white;
+	background-color: #322c2d;
+	box-shadow: 1px 1px #322c2d;
+	display: flex;
+	justify-content: flex-end;
+	align-self: center;
+	align-items: flex-end;
+	padding-right: 8%;
+	font-size: 5rem;
+}
+.App {
+	display: flex;
+}
+.specs_nums {
+	/* border: 1px solid black; */
+	margin-left: 30px;
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+}
+.operations {
+	/* border: 1px solid black; */
+	width: 150px;
+}
+button {
+	font-size: 32px;
+	color: white;
+	width: 6rem;
+	height: 6rem;
+	border-radius: 100px;
+	margin: 13px 25px 13px 0;
+}
