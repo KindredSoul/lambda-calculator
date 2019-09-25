@@ -1,14 +1,22 @@
 import React from "react";
 import "./NumberBtn.css";
 
-const NumberButton = props => {
+const NumberButton = ({ input, number }) => {
 	{
 		/* Display a button element rendering the data being passed down from the parent container on props */
 	}
-	if (props.number !== "0") {
-		return <button className="numberBtn">{props.number}</button>;
-	} else if (props.number == "0") {
-		return <button className="numberBtn zeroBtn">{props.number}</button>;
+	if (number !== "0") {
+		return (
+			<button className="numberBtn" onClick={() => input(number)}>
+				{number}
+			</button>
+		);
+	} else if (number === "0") {
+		return (
+			<button className="numberBtn zeroBtn" onClick={() => input(number)}>
+				{number}
+			</button>
+		);
 	}
 };
 

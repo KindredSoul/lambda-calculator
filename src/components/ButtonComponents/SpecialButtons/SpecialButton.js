@@ -1,11 +1,13 @@
 import React from "react";
 import "./SpecialBtn.css";
 
-const SpecialButton = props => {
+const SpecialButton = ({ input, special }) => {
 	return (
 		<>
 			{/* Display a button element rendering the data being passed down from the parent container on props */}
-			<button className="specialBtn">{props.special}</button>
+			<button className="specialBtn" onClick={() => input(special)}>
+				{special}
+			</button>
 		</>
 	);
 };
